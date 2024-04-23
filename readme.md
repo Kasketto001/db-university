@@ -15,48 +15,50 @@ Pensiamo a quali entità (tabelle) creare per il nostro database e cerchiamo poi
 
 ## Dipartimenti
 
-    - id BIGINT | UNIQUE | AI | PK | INDEX
-    - nome VARCHAR(25)
+    - id BIGINT | UNIQUE | AI | PK | INDEX | 
+    - nome VARCHAR(25) | NOTNULL
 
 ## Corsi di Laurea
     - id BIGINT | UNIQUE | AI | PK | INDEX
-    - nome VARCHAR(40)
-    - id_dipartimento FK | BIGINT 
+    - nome VARCHAR(40) | NOTNULL
+    - id_dipartimento FK | BIGINT | 
 
 ## Corsi
     - id BIGINT | UNIQUE | AI | PK | INDEX
-    - nome_corso VARCHAR(40)
+    - nome_corso VARCHAR(40) | NOTNULL
     - id_corso_laurea FK | BIGINT 
-    - indirizzo_fisico VARCHAR(100)
+    - indirizzo_fisico VARCHAR(100) | NULL
 
 
 ## Insegnanti
     - id BIGINT | UNIQUE | AI | PK | INDEX
-    - nome VARCHAR(25)
-    - cognome VARCHAR(25)
-    - id_corso FK | BIGINT 
+    - nome VARCHAR(25) | NOTNULL
+    - cognome VARCHAR(25) | NOTNULL
+    - cf CHAR(16) | NULL
+    - id_corso FK | BIGINT | 
 
 
 ## Appelli
 
     - id BIGINT | UNIQUE | AI | PK | INDEX
     - id_corso FK | BIGINT 
-    - materia VARCHAR(25)
-    - data DATATIME
+    - materia VARCHAR(25) | NOTNULL
+    - data DATATIME | NOTNULL
 
 ## Studenti
 
     - id BIGINT | UNIQUE | AI | PK | INDEX
-    - Nome VARCHAR(25)
-    - Cognome VARCHAR(25)
+    - Nome VARCHAR(25) | NOTNULL
+    - Cognome VARCHAR(25) | NOTNULL
     - id_corso_laurea FK | BIGINT 
+    - foto VARCHAR(255) | NULL
 
 ## Iscrizione Esami
 
     - id BIGINT | UNIQUE | AI | PK | INDEX
     - id_appello FK | BIGINT 
     - id_studente FK | BIGINT 
-    - voto TINYINT
+    - voto TINYINT | NOTNULL
 
 
 
