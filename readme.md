@@ -23,7 +23,7 @@ Pensiamo a quali entità (tabelle) creare per il nostro database e cerchiamo poi
     - nome VARCHAR(40)
     - id_dipartimento FK | BIGINT 
 
-## Corso
+## Corsi
     - id BIGINT | UNIQUE | AI | PK | INDEX
     - nome_corso VARCHAR(40)
     - id_corso_laurea FK | BIGINT 
@@ -51,7 +51,7 @@ Pensiamo a quali entità (tabelle) creare per il nostro database e cerchiamo poi
     - Cognome VARCHAR(25)
     - id_corso_laurea FK | BIGINT 
 
-## Iscrizione agli Esami
+## Iscrizione Esami
 
     - id BIGINT | UNIQUE | AI | PK | INDEX
     - id_appello FK | BIGINT 
