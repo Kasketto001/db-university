@@ -178,13 +178,13 @@ SELECT * FROM `students` WHERE `date_of_birth` LIKE '1990%';
 
 -   Selezionare tutti i corsi che valgono più di 10 crediti (479)
 
-    ```SQL
-    SELECT * FROM `courses` WHERE `cfu` > 10;
-    ```
-    <details>
-    <summary>Query 2</summary>
+```SQL
+SELECT * FROM `courses` WHERE `cfu` > 10;
+```
+<details>
+<summary>Query 2</summary>
 
-     **id**   | **degree_id** | **name**                           | **description**                                                                                                                                                                                         | **period**  | **year** | **cfu** | **website**               
+ **id**   | **degree_id** | **name**                           | **description**                                                                                                                                                                                         | **period**  | **year** | **cfu** | **website**               
 ----------|---------------|------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|----------|---------|---------------------------
  **1**    | 1             | provident aut non                  | Et dolorem optio nostrum quam. Nesciunt eos non molestiae deleniti. Earum amet nam minus porro aut corrupti.                                                                                            | I semestre  | 1        | 11      | www.minima.uni.it         
  **9**    | 1             | quod in aut                        | Hic a suscipit illum excepturi deleniti. Est sunt animi ut doloremque incidunt. Atque ipsa ipsa incidunt sit dolor dolorum.                                                                             | II semestre | 2        | 13      | www.sunt.uni.it           
@@ -668,7 +668,7 @@ SELECT * FROM `students` WHERE `date_of_birth` LIKE '1990%';
 
 
 
-    </details>
+</details>
 
 -   Selezionare tutti gli studenti che hanno più di 30 anni
 -   Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di laurea (286)
