@@ -4792,11 +4792,17 @@ SELECT COUNT(*) AS num_departments FROM departments;
 -   Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
 
 ```SQL
-SELECT * FROM degrees WHERE level = 'magistrale';
+SELECT COUNT(*) AS num_teachers_with_no_numberphone FROM teachers WHERE phone IS NULL;
 ```
 <details>
 
-<summary>Query 1</summary>
+<summary>Query 8</summary>
+
+ **num_teachers_with_no_numberphone** 
+--------------------------------------
+ **50**                               
+
+
 
 </details>
 
