@@ -169,6 +169,7 @@ SELECT * FROM `students` WHERE `date_of_birth` LIKE '1990%';
 |4961|56|Cleros|Fiore|1990-10-24|GWIXJK53K54Q533N|2021-02-26|624993|battista50@benedetti.com
 |4972|13|Silverio|Grasso|1990-09-15|IUBYYW35F09Y552P|2019-08-17|625004|luna.sartori@hotmail.com
 </details>
+
 -   Selezionare tutti i corsi che valgono più di 10 crediti (479)
 -   Selezionare tutti gli studenti che hanno più di 30 anni
 -   Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di laurea (286)
