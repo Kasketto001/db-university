@@ -4642,8 +4642,49 @@ SELECT * FROM `courses` WHERE `period` LIKE 'II Semestre' && `year` LIKE 1;
 
 
 </details>
+
+
 -   Selezionare tutti gli appelli d'esame che avvengono nel pomeriggio (dopo le 14) del 20/06/2020 (21)
+
+```SQL
+SELECT * FROM exams WHERE date = '2020-06-20' AND HOUR(hour) >= 14;
+```
+<details>
+
+<summary>Query 5</summary>
+
+ **id**   | **course_id** | **date**   | **hour** | **location**    | **address**                      
+----------|---------------|------------|----------|-----------------|----------------------------------
+ **48**   | 10            | 20/06/2020 | 14:15:00 | Piano 2         | Rotonda Loredana 103 Piano 3     
+ **368**  | 74            | 20/06/2020 | 14:20:00 | Appartamento 94 | Strada Pellegrini 53             
+ **598**  | 120           | 20/06/2020 | 15:20:00 | Appartamento 24 | Incrocio Cristyn 66 Piano 5      
+ **1078** | 216           | 20/06/2020 | 16:40:00 | Appartamento 42 | Strada Lorenzo 2 Appartamento 63 
+ **1463** | 293           | 20/06/2020 | 16:00:00 | Piano 6         | Via Monia 86                     
+ **1578** | 316           | 20/06/2020 | 14:45:00 | Piano 8         | Borgo Jelena 1                   
+ **1663** | 333           | 20/06/2020 | 14:40:00 | Piano 2         | Strada Kayla 16                  
+ **1988** | 398           | 20/06/2020 | 15:20:00 | Appartamento 28 | Via Sarita 3 Appartamento 56     
+ **2298** | 460           | 20/06/2020 | 15:45:00 | Appartamento 36 | Contrada Alessio 44 Piano 4      
+ **2433** | 487           | 20/06/2020 | 16:00:00 | Appartamento 78 | Strada Gallo 7 Piano 7           
+ **2578** | 516           | 20/06/2020 | 16:45:00 | Piano 2         | Borgo Noah 404 Piano 2           
+ **2873** | 575           | 20/06/2020 | 14:45:00 | Piano 2         | Strada Mercedes 84               
+ **3423** | 685           | 20/06/2020 | 15:30:00 | Appartamento 87 | Via Rizzo 7                      
+ **3948** | 790           | 20/06/2020 | 16:45:00 | Piano 7         | Contrada Russo 240               
+ **4558** | 912           | 20/06/2020 | 16:40:00 | Piano 7         | Strada D'amico 7 Appartamento 15 
+ **5013** | 1003          | 20/06/2020 | 14:45:00 | Appartamento 10 | Piazza Costa 7                   
+ **5473** | 1095          | 20/06/2020 | 16:00:00 | Piano 7         | Via Vinicio 89                   
+ **5593** | 1119          | 20/06/2020 | 16:20:00 | Piano 4         | Via Raniero 306 Piano 0          
+ **6103** | 1221          | 20/06/2020 | 14:40:00 | Piano 1         | Incrocio Sorrentino 1            
+ **6328** | 1266          | 20/06/2020 | 16:30:00 | Piano 5         | Via Ileana 1 Appartamento 27     
+ **6403** | 1281          | 20/06/2020 | 16:00:00 | Piano 4         | Rotonda Giobbe 4                 
+
+
+
+</details>
+
 -   Selezionare tutti i corsi di laurea magistrale (38)
+
+
+
 -   Da quanti dipartimenti è composta l'università? (12)
 -   Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
 
