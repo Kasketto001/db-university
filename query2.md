@@ -5,6 +5,9 @@
 ```SQL
 SELECT YEAR(`enrolment_date`) AS anno, COUNT(*) AS numero_iscritti FROM `students` GROUP BY YEAR(enrolment_date);
 ```
+<details>
+
+<summary>Query 1</summary>
 
  **anno** | **numero_iscritti** |
 ----------|---------------------|
@@ -12,7 +15,7 @@ SELECT YEAR(`enrolment_date`) AS anno, COUNT(*) AS numero_iscritti FROM `student
  2019     | 1709                |     
  2020     | 1645                |     
  2021     | 734                 |    
-
+</details>
 
 
 
@@ -22,6 +25,9 @@ FROM `teachers`
 GROUP BY `office_address`
 HAVING COUNT(*) > 1;
 ```
+<details>
+
+<summary>Query 2</summary>
 
 | **office_address**                | **num_insegnanti** |
 |-------------------------------|----------------|
@@ -49,7 +55,7 @@ HAVING COUNT(*) > 1;
 | Via Giacinto 11 Piano 8       | 3              |
 | Via Maika 491                 | 3              |
 | Via Mariano 48                | 4              |
-
+</details>
 
 
 
@@ -60,6 +66,9 @@ JOIN exams e ON es.exam_id = e.id
 JOIN students s ON es.student_id = s.id
 GROUP BY e.id, s.name, s.surname, s.fiscal_code;
 ```
+<details>
+
+<summary>Query 3</summary>
 
  **exam_id** | **name**      | **surname** | **fiscal_code**  | **media_voti** 
 -------------|---------------|-------------|------------------|----------------
@@ -42641,7 +42650,7 @@ GROUP BY e.id, s.name, s.surname, s.fiscal_code;
  6582        | Tosca         | Martini     | YZFSPL88R54A696A | 190.000        
  6583        | Ruth          | Fiore       | EGPNXA35Y17Q604H | 220.000        
 
-
+</details>
 
 
 ```SQL
@@ -42650,6 +42659,9 @@ FROM degrees deg
 JOIN departments d ON deg.department_id = d.id 
 GROUP BY d.name;
 ```
+<details>
+
+<summary>Query 4</summary>
 
  **nome_dipartimento**                                                | **num_corsi_laurea** 
 ----------------------------------------------------------------------|----------------------
@@ -42666,3 +42678,4 @@ GROUP BY d.name;
  Dipartimento di Scienze statistiche                                  | 3                    
  Dipartimento di Studi linguistici e letterari                        | 7                    
 
+</details>
