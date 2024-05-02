@@ -4799,7 +4799,7 @@ SELECT COUNT(*) AS num_teachers_with_no_numberphone FROM teachers WHERE phone IS
 <summary>Query 8</summary>
 
  **num_teachers_with_no_numberphone** 
---------------------------------------
+--------------------------------------+
  **50**                               
 
 
